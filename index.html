@@ -539,8 +539,12 @@
     </div>
   </footer>
 
-  <!-- Fullscreen Lightbox -->
- <div class="lightbox-stage">
+<!-- Fullscreen Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close viewer">&times;</button>
+    <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous artwork">&#10094;</button>
+
+    <div class="lightbox-stage">
       <div class="lightbox-media">
         <img id="lightbox-img" src="" alt="" draggable="false" />
         <span class="lightbox-watermark" aria-hidden="true">Sh1_<em>r4</em></span>
