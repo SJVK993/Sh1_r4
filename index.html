@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sh1_r4 | Digital Illustrator</title>
+  <meta name="description" content="Anime and manhwa digital illustration portfolio and commissions by Sh1_r4." />
+
+  <!-- Custom Crimson & Gold Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309070c'/%3E%3Crect x='3' y='3' width='58' height='58' rx='11' fill='none' stroke='%23d4b06a' stroke-width='2.5'/%3E%3Cpath d='M32 10L37.5 26.5L54 32L37.5 37.5L32 54L26.5 37.5L10 32L26.5 26.5L32 10Z' fill='%239e192c' stroke='%23f6e3b6' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='3.5' fill='%23ffffff'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated gold dust particle backdrop -->
+  <canvas id="gold-particles" aria-hidden="true"></canvas>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Slim Top Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand">Sh1_<em>r4</em></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#prices">Prices</a>
+        <a href="#terms">Terms</a>
+        <a href="https://ko-fi.com/Sh1r4" target="_blank" rel="noopener" class="nav-glass-btn">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Unframed Editorial Header -->
+    <section class="artist-hero container">
+      <div class="hero-left">
+        <h1 class="artist-title">Sh1_<em>r4</em></h1>
+        <p class="artist-subtitle">Digital Illustrator &middot; Anime &amp; Manhwa</p>
+      </div>
+
+      <div class="hero-right">
+        <div class="status-badge">
+          <span class="star-spinner" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none">
+              <path d="M12 1L14.6 9.4L23 12L14.6 14.6L12 23L9.4 14.6L1 12L9.4 9.4L12 1Z" fill="#ffffff" />
+            </svg>
+          </span>
+          <span>COMMISSIONS: OPEN</span>
+        </div>
+
+        <a href="https://ko-fi.com/Sh1r4" target="_blank" rel="noopener" class="btn-glass">Order on Kofi</a>
+      </div>
+    </section>
+
+    <!-- Ultra Compact 3x2 Portfolio Gallery Above the Fold -->
+    <section id="portfolio" class="portfolio-section container">
+      <div class="gallery-grid">
+        <figure class="art-card royal-frame" tabindex="0" data-index="0">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="art-inner">
+            <img src="img/art1.jpeg" alt="Crimson Nocturne" loading="eager" />
+            <figcaption class="art-caption">Crimson Nocturne</figcaption>
+          </div>
+        </figure>
+
+        <figure class="art-card royal-frame" tabindex="0" data-index="1">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="art-inner">
+            <img src="img/art2.jpeg" alt="Velvet Portrait" loading="eager" />
+            <figcaption class="art-caption">Velvet Portrait</figcaption>
+          </div>
+        </figure>
+
+        <figure class="art-card royal-frame" tabindex="0" data-index="2">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="art-inner">
+            <img src="img/art3.jpeg" alt="Golden Hour Study" loading="eager" />
+            <figcaption class="art-caption">Golden Hour Study</figcaption>
+          </div>
+        </figure>
+
+        <figure class="art-card royal-frame" tabindex="0" data-index="3">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="art-inner">
+            <img src="img/art4.jpeg" alt="Warm Embrace" loading="eager" />
+            <figcaption class="art-caption">Warm Embrace</figcaption>
+          </div>
+        </figure>
+
+        <figure class="art-card royal-frame" tabindex="0" data-index="4">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="art-inner">
+            <img src="img/art5.jpeg" alt="Quiet Twilight" loading="eager" />
+            <figcaption class="art-caption">Quiet Twilight</figcaption>
+          </div>
+        </figure>
+
+        <figure class="art-card royal-frame" tabindex="0" data-index="5">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="art-inner">
+            <img src="img/art6.jpeg" alt="Scarlet Reverie" loading="eager" />
+            <figcaption class="art-caption">Scarlet Reverie</figcaption>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Horizontal Golden Leafy Vine Divider 1 -->
+    <div class="vine-divider container" aria-hidden="true">
+      <svg class="vine-svg-h" viewBox="0 0 960 64" width="960" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="vineGoldH1" x1="0" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#8b6b33" stop-opacity="0.15" />
+            <stop offset="18%" stop-color="#d4b06a" />
+            <stop offset="50%" stop-color="#f7e4b8" />
+            <stop offset="82%" stop-color="#d4b06a" />
+            <stop offset="100%" stop-color="#8b6b33" stop-opacity="0.15" />
+          </linearGradient>
+          <linearGradient id="leafFillH1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f5e0b0" />
+            <stop offset="55%" stop-color="#c99f54" />
+            <stop offset="100%" stop-color="#7c5d27" />
+          </linearGradient>
+        </defs>
+
+        <path d="M24 32 C95 20, 155 44, 225 32 C295 20, 365 44, 452 32" stroke="url(#vineGoldH1)" stroke-width="2" stroke-linecap="round" />
+        <path d="M40 32 C108 42, 168 22, 238 32 C308 42, 378 22, 452 32" stroke="url(#vineGoldH1)" stroke-width="1.2" stroke-opacity="0.7" stroke-linecap="round" />
+        <path d="M508 32 C595 44, 665 20, 735 32 C805 44, 865 20, 936 32" stroke="url(#vineGoldH1)" stroke-width="2" stroke-linecap="round" />
+        <path d="M508 32 C582 22, 652 42, 722 32 C792 22, 852 42, 920 32" stroke="url(#vineGoldH1)" stroke-width="1.2" stroke-opacity="0.7" stroke-linecap="round" />
+
+        <path d="M168 29 C165 15, 178 12, 181 20 C183 25, 177 27, 175 23" stroke="#e4c583" stroke-width="1.2" fill="none" />
+        <path d="M332 35 C330 49, 343 52, 346 44 C348 39, 342 37, 340 41" stroke="#e4c583" stroke-width="1.2" fill="none" />
+        <path d="M628 35 C630 49, 617 52, 614 44 C612 39, 618 37, 620 41" stroke="#e4c583" stroke-width="1.2" fill="none" />
+        <path d="M792 29 C795 15, 782 12, 779 20 C777 25, 783 27, 785 23" stroke="#e4c583" stroke-width="1.2" fill="none" />
+
+        <g>
+          <path d="M98 28 C108 12, 132 10, 142 18 C128 24, 112 28, 98 28 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M101 27 C114 22, 126 19, 138 18" stroke="#61461b" stroke-width="0.9" />
+          <path d="M126 35 C138 50, 162 52, 172 44 C158 38, 142 34, 126 35 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M129 36 C142 40, 155 43, 168 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M210 31 C222 14, 248 12, 260 20 C244 27, 226 31, 210 31 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M214 30 C228 25, 242 22, 256 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M242 33 C254 50, 280 52, 292 43 C276 37, 258 33, 242 33 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M246 34 C260 39, 274 42, 288 43" stroke="#61461b" stroke-width="0.9" />
+          <path d="M342 31 C355 13, 384 11, 396 20 C379 27, 360 31, 342 31 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M346 30 C361 24, 376 21, 392 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M376 34 C389 51, 418 53, 430 44 C413 38, 394 34, 376 34 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M380 35 C395 40, 410 43, 426 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M412 28 C422 15, 442 15, 450 23 C438 27, 425 29, 412 28 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+        </g>
+
+        <g>
+          <path d="M862 28 C852 12, 828 10, 818 18 C832 24, 848 28, 862 28 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M859 27 C846 22, 834 19, 822 18" stroke="#61461b" stroke-width="0.9" />
+          <path d="M834 35 C822 50, 798 52, 788 44 C802 38, 818 34, 834 35 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M831 36 C818 40, 805 43, 792 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M750 31 C738 14, 712 12, 700 20 C716 27, 734 31, 750 31 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M746 30 C732 25, 718 22, 704 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M718 33 C706 50, 680 52, 668 43 C684 37, 702 33, 718 33 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M714 34 C700 39, 686 42, 672 43" stroke="#61461b" stroke-width="0.9" />
+          <path d="M618 31 C605 13, 576 11, 564 20 C581 27, 600 31, 618 31 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M614 30 C599 24, 584 21, 568 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M584 34 C571 51, 542 53, 530 44 C547 38, 566 34, 584 34 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M580 35 C565 40, 550 43, 534 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M548 28 C538 15, 518 15, 510 23 C522 27, 535 29, 548 28 Z" fill="url(#leafFillH1)" stroke="#f6e3b7" stroke-width="0.6" />
+        </g>
+
+        <circle cx="192" cy="34" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+        <circle cx="312" cy="27" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+        <circle cx="648" cy="27" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+        <circle cx="768" cy="34" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+
+        <path d="M480 12 L492 26 L506 32 L492 38 L480 52 L468 38 L454 32 L468 26 Z" fill="url(#leafFillH1)" stroke="#f8e8c0" stroke-width="1" />
+        <path d="M480 21 L491 32 L480 43 L469 32 Z" fill="#9c182b" stroke="#f6e3b7" stroke-width="1" />
+        <circle cx="480" cy="32" r="2.6" fill="#fff4d6" />
+      </svg>
+    </div>
+
+    <!-- Commission Prices -->
+    <section id="prices" class="section container reveal">
+      <div class="section-header">
+        <h2>Commission Prices</h2>
+        <p class="section-sub">Rates in USD &middot; Extra character adds 80 percent of base rate</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card royal-frame">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="price-inner">
+            <div class="price-thumb">
+              <img src="img/art2.jpeg" alt="Icon example" loading="lazy" />
+            </div>
+            <div class="price-body">
+              <h3>Icon</h3>
+              <p class="price-amount">$25 to $30 <span>USD</span></p>
+              <p class="price-desc">Close portrait with clean lineart, warm lighting, and simple backdrop.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="price-card royal-frame">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="price-inner">
+            <div class="price-thumb">
+              <img src="img/art4.jpeg" alt="Bust example" loading="lazy" />
+            </div>
+            <div class="price-body">
+              <h3>Bust</h3>
+              <p class="price-amount">$50 <span>USD</span></p>
+              <p class="price-desc">Shoulders up in full color, soft shading, and expressive atmosphere.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="price-card royal-frame">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="price-inner">
+            <div class="price-thumb">
+              <img src="img/art3.jpeg" alt="Halfbody example" loading="lazy" />
+            </div>
+            <div class="price-body">
+              <h3>Halfbody</h3>
+              <p class="price-amount">$90 <span>USD</span></p>
+              <p class="price-desc">Waist up full render with rich palette depth and dramatic lighting.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="price-card royal-frame featured">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="price-inner">
+            <div class="price-thumb">
+              <img src="img/art1.jpeg" alt="Full Illustration example" loading="lazy" />
+            </div>
+            <div class="price-body">
+              <h3>Full Illustration</h3>
+              <p class="price-amount">$150+ <span>USD</span></p>
+              <p class="price-desc">Full render, narrative framing, detailed scenery, and cinematic mood.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Single Unified Glassmorphic CTA -->
+      <div class="pricing-action">
+        <a href="https://ko-fi.com/Sh1r4" target="_blank" rel="noopener" class="btn-glass btn-glass-lg">Request a Commission on Kofi</a>
+      </div>
+    </section>
+
+    <!-- Horizontal Golden Leafy Vine Divider 2 -->
+    <div class="vine-divider container" aria-hidden="true">
+      <svg class="vine-svg-h" viewBox="0 0 960 64" width="960" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="vineGoldH2" x1="0" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#8b6b33" stop-opacity="0.15" />
+            <stop offset="18%" stop-color="#d4b06a" />
+            <stop offset="50%" stop-color="#f7e4b8" />
+            <stop offset="82%" stop-color="#d4b06a" />
+            <stop offset="100%" stop-color="#8b6b33" stop-opacity="0.15" />
+          </linearGradient>
+          <linearGradient id="leafFillH2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f5e0b0" />
+            <stop offset="55%" stop-color="#c99f54" />
+            <stop offset="100%" stop-color="#7c5d27" />
+          </linearGradient>
+        </defs>
+
+        <path d="M24 32 C95 20, 155 44, 225 32 C295 20, 365 44, 452 32" stroke="url(#vineGoldH2)" stroke-width="2" stroke-linecap="round" />
+        <path d="M40 32 C108 42, 168 22, 238 32 C308 42, 378 22, 452 32" stroke="url(#vineGoldH2)" stroke-width="1.2" stroke-opacity="0.7" stroke-linecap="round" />
+        <path d="M508 32 C595 44, 665 20, 735 32 C805 44, 865 20, 936 32" stroke="url(#vineGoldH2)" stroke-width="2" stroke-linecap="round" />
+        <path d="M508 32 C582 22, 652 42, 722 32 C792 22, 852 42, 920 32" stroke="url(#vineGoldH2)" stroke-width="1.2" stroke-opacity="0.7" stroke-linecap="round" />
+
+        <path d="M168 29 C165 15, 178 12, 181 20 C183 25, 177 27, 175 23" stroke="#e4c583" stroke-width="1.2" fill="none" />
+        <path d="M332 35 C330 49, 343 52, 346 44 C348 39, 342 37, 340 41" stroke="#e4c583" stroke-width="1.2" fill="none" />
+        <path d="M628 35 C630 49, 617 52, 614 44 C612 39, 618 37, 620 41" stroke="#e4c583" stroke-width="1.2" fill="none" />
+        <path d="M792 29 C795 15, 782 12, 779 20 C777 25, 783 27, 785 23" stroke="#e4c583" stroke-width="1.2" fill="none" />
+
+        <g>
+          <path d="M98 28 C108 12, 132 10, 142 18 C128 24, 112 28, 98 28 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M101 27 C114 22, 126 19, 138 18" stroke="#61461b" stroke-width="0.9" />
+          <path d="M126 35 C138 50, 162 52, 172 44 C158 38, 142 34, 126 35 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M129 36 C142 40, 155 43, 168 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M210 31 C222 14, 248 12, 260 20 C244 27, 226 31, 210 31 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M214 30 C228 25, 242 22, 256 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M242 33 C254 50, 280 52, 292 43 C276 37, 258 33, 242 33 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M246 34 C260 39, 274 42, 288 43" stroke="#61461b" stroke-width="0.9" />
+          <path d="M342 31 C355 13, 384 11, 396 20 C379 27, 360 31, 342 31 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M346 30 C361 24, 376 21, 392 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M376 34 C389 51, 418 53, 430 44 C413 38, 394 34, 376 34 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M380 35 C395 40, 410 43, 426 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M412 28 C422 15, 442 15, 450 23 C438 27, 425 29, 412 28 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+        </g>
+
+        <g>
+          <path d="M862 28 C852 12, 828 10, 818 18 C832 24, 848 28, 862 28 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M859 27 C846 22, 834 19, 822 18" stroke="#61461b" stroke-width="0.9" />
+          <path d="M834 35 C822 50, 798 52, 788 44 C802 38, 818 34, 834 35 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M831 36 C818 40, 805 43, 792 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M750 31 C738 14, 712 12, 700 20 C716 27, 734 31, 750 31 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M746 30 C732 25, 718 22, 704 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M718 33 C706 50, 680 52, 668 43 C684 37, 702 33, 718 33 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M714 34 C700 39, 686 42, 672 43" stroke="#61461b" stroke-width="0.9" />
+          <path d="M618 31 C605 13, 576 11, 564 20 C581 27, 600 31, 618 31 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M614 30 C599 24, 584 21, 568 20" stroke="#61461b" stroke-width="0.9" />
+          <path d="M584 34 C571 51, 542 53, 530 44 C547 38, 566 34, 584 34 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+          <path d="M580 35 C565 40, 550 43, 534 44" stroke="#61461b" stroke-width="0.9" />
+          <path d="M548 28 C538 15, 518 15, 510 23 C522 27, 535 29, 548 28 Z" fill="url(#leafFillH2)" stroke="#f6e3b7" stroke-width="0.6" />
+        </g>
+
+        <circle cx="192" cy="34" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+        <circle cx="312" cy="27" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+        <circle cx="648" cy="27" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+        <circle cx="768" cy="34" r="3.5" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+
+        <path d="M480 12 L492 26 L506 32 L492 38 L480 52 L468 38 L454 32 L468 26 Z" fill="url(#leafFillH2)" stroke="#f8e8c0" stroke-width="1" />
+        <path d="M480 21 L491 32 L480 43 L469 32 Z" fill="#9c182b" stroke="#f6e3b7" stroke-width="1" />
+        <circle cx="480" cy="32" r="2.6" fill="#fff4d6" />
+      </svg>
+    </div>
+
+    <!-- Terms of Service -->
+    <section id="terms" class="section container reveal">
+      <div class="section-header">
+        <h2>Terms of Service</h2>
+        <p class="section-sub">Please read before placing your order</p>
+      </div>
+
+      <div class="terms-layout">
+        <div class="terms-card royal-frame">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="terms-inner">
+            <h3>What I Draw</h3>
+            <div class="terms-split">
+              <div>
+                <h4 class="tag-yes">Will Draw</h4>
+                <ul>
+                  <li>Original characters</li>
+                  <li>Anime and manhwa fanart</li>
+                  <li>Couples and emotional scenes</li>
+                  <li>Soft gothic and dark moods</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="tag-no">Will Not Draw</h4>
+                <ul>
+                  <li>Furry and anthro characters</li>
+                  <li>Heavy mecha and complex armor</li>
+                  <li>Explicit adult content</li>
+                  <li>Hateful imagery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vertical Golden Leafy Vine Divider (Desktop) -->
+        <div class="vine-vertical" aria-hidden="true">
+          <svg class="vine-svg-v" viewBox="0 0 64 340" width="64" height="340" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="vineGoldV1" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#8b6b33" stop-opacity="0.2" />
+                <stop offset="20%" stop-color="#d4b06a" />
+                <stop offset="50%" stop-color="#f7e4b8" />
+                <stop offset="80%" stop-color="#d4b06a" />
+                <stop offset="100%" stop-color="#8b6b33" stop-opacity="0.2" />
+              </linearGradient>
+              <linearGradient id="leafFillV1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#f5e0b0" />
+                <stop offset="55%" stop-color="#c99f54" />
+                <stop offset="100%" stop-color="#7c5d27" />
+              </linearGradient>
+            </defs>
+
+            <path d="M32 10 C22 60, 42 105, 32 152" stroke="url(#vineGoldV1)" stroke-width="2" stroke-linecap="round" />
+            <path d="M32 18 C40 66, 24 110, 32 152" stroke="url(#vineGoldV1)" stroke-width="1.1" stroke-opacity="0.7" stroke-linecap="round" />
+            <path d="M32 188 C42 235, 22 280, 32 330" stroke="url(#vineGoldV1)" stroke-width="2" stroke-linecap="round" />
+            <path d="M32 188 C24 230, 40 274, 32 322" stroke="url(#vineGoldV1)" stroke-width="1.1" stroke-opacity="0.7" stroke-linecap="round" />
+
+            <path d="M30 42 C14 48, 10 66, 18 76 C25 65, 29 54, 30 42 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+            <path d="M29 45 C24 55, 21 64, 19 72" stroke="#61461b" stroke-width="0.9" />
+
+            <path d="M34 62 C50 68, 54 86, 46 96 C39 85, 35 74, 34 62 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+            <path d="M35 65 C40 75, 43 84, 45 92" stroke="#61461b" stroke-width="0.9" />
+
+            <path d="M30 98 C13 105, 10 124, 18 134 C25 123, 29 111, 30 98 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+            <path d="M29 101 C24 112, 21 121, 19 130" stroke="#61461b" stroke-width="0.9" />
+
+            <path d="M34 118 C48 124, 52 138, 44 146 C38 138, 35 128, 34 118 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+
+            <path d="M30 222 C16 216, 12 202, 20 194 C26 202, 29 212, 30 222 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+
+            <path d="M34 242 C51 235, 54 216, 46 206 C39 217, 35 229, 34 242 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+            <path d="M35 239 C40 228, 43 219, 45 210" stroke="#61461b" stroke-width="0.9" />
+
+            <path d="M30 278 C14 272, 10 254, 18 244 C25 255, 29 266, 30 278 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+            <path d="M29 275 C24 265, 21 256, 19 248" stroke="#61461b" stroke-width="0.9" />
+
+            <path d="M34 298 C50 292, 54 274, 46 264 C39 275, 35 286, 34 298 Z" fill="url(#leafFillV1)" stroke="#f6e3b7" stroke-width="0.6" />
+            <path d="M35 295 C40 285, 43 276, 45 268" stroke="#61461b" stroke-width="0.9" />
+
+            <circle cx="32" cy="86" r="3.4" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+            <circle cx="32" cy="254" r="3.4" fill="#9f192c" stroke="#f0d598" stroke-width="0.8" />
+
+            <path d="M32 150 L44 162 L52 170 L44 178 L32 190 L20 178 L12 170 L20 162 Z" fill="url(#leafFillV1)" stroke="#f8e8c0" stroke-width="1" />
+            <path d="M32 159 L43 170 L32 181 L21 170 Z" fill="#9c182b" stroke="#f6e3b7" stroke-width="1" />
+            <circle cx="32" cy="170" r="2.5" fill="#fff4d6" />
+          </svg>
+        </div>
+
+        <!-- Mobile Horizontal Vine Fallback inside Terms -->
+        <div class="vine-mobile" aria-hidden="true">
+          <svg viewBox="0 0 360 44" width="360" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="vineGoldM1" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#8b6b33" stop-opacity="0.2" />
+                <stop offset="50%" stop-color="#f7e4b8" />
+                <stop offset="100%" stop-color="#8b6b33" stop-opacity="0.2" />
+              </linearGradient>
+              <linearGradient id="leafFillM1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#f5e0b0" />
+                <stop offset="100%" stop-color="#8c682b" />
+              </linearGradient>
+            </defs>
+            <path d="M12 22 C65 13, 110 31, 162 22" stroke="url(#vineGoldM1)" stroke-width="1.8" stroke-linecap="round" />
+            <path d="M198 22 C250 31, 295 13, 348 22" stroke="url(#vineGoldM1)" stroke-width="1.8" stroke-linecap="round" />
+            <path d="M68 20 C78 8, 98 8, 106 16 C94 20, 82 22, 68 20 Z" fill="url(#leafFillM1)" stroke="#f6e3b7" stroke-width="0.5" />
+            <path d="M108 24 C118 36, 138 36, 146 28 C134 24, 122 22, 108 24 Z" fill="url(#leafFillM1)" stroke="#f6e3b7" stroke-width="0.5" />
+            <path d="M292 20 C282 8, 262 8, 254 16 C266 20, 278 22, 292 20 Z" fill="url(#leafFillM1)" stroke="#f6e3b7" stroke-width="0.5" />
+            <path d="M252 24 C242 36, 222 36, 214 28 C226 24, 238 22, 252 24 Z" fill="url(#leafFillM1)" stroke="#f6e3b7" stroke-width="0.5" />
+            <path d="M180 9 L191 22 L180 35 L169 22 Z" fill="#9c182b" stroke="#f6e3b7" stroke-width="1" />
+            <circle cx="180" cy="22" r="2.2" fill="#fff4d6" />
+          </svg>
+        </div>
+
+        <div class="terms-card royal-frame">
+          <span class="frame-crest top" aria-hidden="true"></span>
+          <span class="corner tl" aria-hidden="true"></span>
+          <span class="corner tr" aria-hidden="true"></span>
+          <span class="corner bl" aria-hidden="true"></span>
+          <span class="corner br" aria-hidden="true"></span>
+          <div class="terms-inner">
+            <h3>Process &amp; Payment</h3>
+            <ul class="terms-list">
+              <li><strong>Payment:</strong> Paid upfront via Kofi or PayPal. Orders over $90 may be split into two equal parts.</li>
+              <li><strong>Delivery:</strong> Estimated 1 to 3 weeks depending on detail and current queue.</li>
+              <li><strong>Revisions:</strong> Up to 3 major edits during the sketch stage, plus small color tweaks after rendering.</li>
+              <li><strong>Usage:</strong> Personal use only. Commercial work adds a 100 percent fee. No AI training or NFTs allowed.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Sh1_<em>r4</em></p>
+      <div class="social-links">
+        <a href="https://ko-fi.com/Sh1r4" target="_blank" rel="noopener">Kofi</a>
+        <a href="https://x.com/Sh1_r4_" target="_blank" rel="noopener">X</a>
+        <!-- Descomenta esta línea cuando creen el Instagram y cambia TU_USUARIO:
+        <a href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram</a>
+        -->
+        <a href="mailto:contact@sh1r4.art">Email</a>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Sh1_r4. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Fullscreen Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close viewer">&times;</button>
+    <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous artwork">&#10094;</button>
+
+    <div class="lightbox-stage">
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-meta">
+        <p id="lightbox-caption"></p>
+        <span id="lightbox-counter"></span>
+      </div>
+    </div>
+
+    <button class="lightbox-nav next" id="lightbox-next" aria-label="Next artwork">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
