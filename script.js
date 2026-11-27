@@ -94,6 +94,43 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "ArrowLeft") showPrev();
   });
 
+  // === Deslizar con el dedo (Swipe) en el Lightbox ===
+  let touchStartX = 0;
+  let touchStartY = 0;
+
+  if (lightbox) {
+    lightbox.addEventListener(
+      "touchstart",
+      (event) => {
+        touchStartX = event.changedTouches[0].clientX;
+        touchStartY = event.changedTouches[0].clientY;
+      },
+      { passive: true }
+    );
+
+    lightbox.addEventListener(
+      "touchend",
+      (event) => {
+        if (!lightbox.classList.contains("active")) return;
+        const diffX = touchStartX - event.changedTouches[0].clientX;
+        const diffY = touchStartY - event.changedTouches[0].clientY;
+
+        // Solo cambia de foto si el gesto fue claramente horizontal
+        if (Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY)) {
+          if (diffX > 0) showNext();
+          else showPrev();
+        }
+      },
+      { passive: true }
+    );
+  }
+
+  // === Protección ligera (sin clic derecho ni arrastre en obras) ===
+  document.querySelectorAll(".art-inner img, .price-thumb img, #lightbox-img").forEach((img) => {
+    img.setAttribute("draggable", "false");
+    img.addEventListener("contextmenu", (event) => event.preventDefault());
+  });
+
   // === Subtle Scroll Reveal ===
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
