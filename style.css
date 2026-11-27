@@ -298,31 +298,60 @@ a {
   border-radius: 10px;
 }
 
-/* === Sculpted Royal Gold Frame System === */
+/* === Sculpted Royal Gold Frame System (Fino + Brillo Metálico) === */
 .royal-frame {
   position: relative;
-  padding: 7px;
-  background: linear-gradient(145deg, #f6e3b6 0%, #c89f55 24%, #6f5222 50%, #d4b06a 76%, #fff1cd 100%);
-  box-shadow:
-    0 10px 28px rgba(0, 0, 0, 0.68),
-    inset 0 0 0 1px rgba(255, 246, 220, 0.45);
+  padding: 0;
+  background: transparent;
+  border: 3px solid #d4b06a;
+  border-image: linear-gradient(135deg, #f6e3b6 0%, #b38c46 28%, #6f5222 50%, #d4b06a 76%, #fff3d1 100%) 1;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.62);
   transition: transform var(--ease), box-shadow var(--ease);
 }
 
+/* Línea carmesí fina interior */
 .royal-frame::before {
   content: "";
   position: absolute;
-  inset: 3px;
-  border: 2px solid var(--crimson-deep);
-  box-shadow: inset 0 0 0 1px rgba(246, 227, 182, 0.52);
+  inset: 0;
+  border: 1px solid rgba(130, 18, 34, 0.85);
+  box-shadow: inset 0 0 0 1px rgba(246, 227, 182, 0.25);
   pointer-events: none;
   z-index: 2;
 }
 
+/* Reflejo metálico diagonal en hover */
+.royal-frame::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: 3;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(255, 244, 214, 0.22) 47%,
+    rgba(255, 255, 255, 0.36) 50%,
+    rgba(255, 244, 214, 0.22) 53%,
+    transparent 65%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  opacity: 0;
+  transition: background-position 0.75s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease;
+}
+
+.royal-frame:hover::after,
+.royal-frame:focus-visible::after {
+  opacity: 1;
+  background-position: 0% 0;
+}
+
+/* Esquinas barrocas más delicadas */
 .royal-frame .corner {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   z-index: 4;
   pointer-events: none;
   background-repeat: no-repeat;
@@ -330,18 +359,19 @@ a {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2 22V4C2 2.9 2.9 2 4 2H22V5H10C7.2 5 5 7.2 5 10V22H2Z' fill='%23f6e3b6' stroke='%23634517' stroke-width='0.9'/%3E%3Cpath d='M7 15C7 10.6 10.6 7 15 7C12.5 9.2 10.8 11.4 9.6 14.4L7 15Z' fill='%23d4b06a'/%3E%3Ccircle cx='5.5' cy='5.5' r='2' fill='%23a81c30' stroke='%23fff3d1' stroke-width='0.7'/%3E%3C/svg%3E");
 }
 
-.royal-frame .corner.tl { top: -2px; left: -2px; }
-.royal-frame .corner.tr { top: -2px; right: -2px; transform: scaleX(-1); }
-.royal-frame .corner.bl { bottom: -2px; left: -2px; transform: scaleY(-1); }
-.royal-frame .corner.br { bottom: -2px; right: -2px; transform: scale(-1, -1); }
+.royal-frame .corner.tl { top: -5px; left: -5px; }
+.royal-frame .corner.tr { top: -5px; right: -5px; transform: scaleX(-1); }
+.royal-frame .corner.bl { bottom: -5px; left: -5px; transform: scaleY(-1); }
+.royal-frame .corner.br { bottom: -5px; right: -5px; transform: scale(-1, -1); }
 
+/* Cresta superior más estilizada */
 .royal-frame .frame-crest.top {
   position: absolute;
-  top: -7px;
+  top: -9px;
   left: 50%;
   transform: translateX(-50%);
-  width: 44px;
-  height: 15px;
+  width: 34px;
+  height: 12px;
   z-index: 5;
   pointer-events: none;
   background-repeat: no-repeat;
@@ -483,14 +513,17 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: var(--bg-card);
+  background: linear-gradient(155deg, rgba(28, 18, 30, 0.52) 0%, rgba(11, 8, 14, 0.36) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: inset 0 1px 0 rgba(255, 246, 220, 0.16);
 }
 
 .price-thumb {
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-bottom: 2px solid var(--crimson);
-  background: #1a1218;
+  border-bottom: 1px solid rgba(212, 176, 106, 0.32);
+  background: transparent;
 }
 
 .price-thumb img {
